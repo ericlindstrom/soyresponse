@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/ericlindstrom/soyresponse/issues"
   },
-  "homepage": "https://github.com/ericlindstrom/soyresponse"
+  "homepage": "https://github.com/ericlindstrom/soyresponse",
+  "dependencies": {
+    "extend": "^2.0.0",
+    "soynode": "^0.7.5"
+  }
 }

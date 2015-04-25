@@ -12,7 +12,7 @@ render soy templates in express
      *  1. require soynode and soyresponse 
      */
     var soynode = require('soynode');
-    var soyresponse = require('./middleware/soyresponse');
+    var soyresponse = require('soyresponse');
     
     
     /**

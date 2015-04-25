@@ -1,0 +1,19 @@
+{
+  "name": "soyresponse",
+  "version": "0.0.1",
+  "description": "render soy templates in express",
+  "main": "./lib/soyresponse",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ericlindstrom/soyresponse.git"
+  },
+  "author": "Eric Lindstrom <eric.lindstrom@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ericlindstrom/soyresponse/issues"
+  },
+  "homepage": "https://github.com/ericlindstrom/soyresponse"
+}

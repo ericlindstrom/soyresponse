@@ -4,33 +4,28 @@
 |----------------|--------|
 | soyresponse    | Draft  |
 
+Render soy templates in express
 
+NPM:
 
-render soy templates in express
+    npm install soynode soyresponse --save
+
+app.js
+
+    //...
+    var app = express();
 
     /**
-     *  1. require soynode and soyresponse 
+     *  1. require soyresponse 
      */
-    var soynode = require('soynode');
     var soyresponse = require('soyresponse');
-    
-    
+
     /**
-     *  2. Set options for soynode templating
-     */
-    soynode.setOptions({
-      allowDynamicRecompile: true,
-      uniqueDir: false
-    });
-    soynode.compileTemplates(__dirname);
-    
-    
-    /**
-     *  3. Add soyresponse middleware with options
+     *  2. Add soyresponse middleware with application directory and options
      */
     var soyResponseOptions = {
       allowJson: true,
       xssiPrefix: '])}while(1);</x>'
     };
-    app.use(soyresponse(soyResponseOptions));
+    app.use(soyresponse(__dirname, soyResponseOptions));
  

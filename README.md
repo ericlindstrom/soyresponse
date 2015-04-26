@@ -6,11 +6,13 @@
 
 Render soy templates in express
 
-NPM:
+Example: [ericlindstrom/soyresponse-example](https://github.com/ericlindstrom/soyresponse-example)
+
+### NPM:
 
     npm install soynode soyresponse --save
 
-app.js
+### app.js
 
     //...
     var app = express();
@@ -21,11 +23,21 @@ app.js
     var soyresponse = require('soyresponse');
 
     /**
-     *  2. Add soyresponse middleware with application directory and options
+     *  2. Add soyresponse middleware with template directory and options
      */
     var soyResponseOptions = {
       allowJson: true,
-      xssiPrefix: '])}while(1);</x>'
+      xssiPrefix: '])}while(1);</x>',
+      removeFromJson: ['GLOBAL']
     };
     app.use(soyresponse(__dirname, soyResponseOptions));
  
+### Options
+
+`templateDir` - Compiles and loads all .soy files in the directory.
+
+`options.allowJson` - When request is XHR, allow JSON
+
+`options.xssiPrefix` - http://goo.gl/fdgn7p
+
+`options.removeFromJson` - Remove objects from JSON that you may not need, such as a global context variable.

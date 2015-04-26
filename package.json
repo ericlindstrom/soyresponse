@@ -19,5 +19,9 @@
   "dependencies": {
     "extend": "^2.0.0",
     "soynode": "^0.7.5"
+  },
+  "devDependencies": {
+    "express": "^4.12.3",
+    "mocha": "^2.2.4"
   }
 }

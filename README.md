@@ -10,7 +10,7 @@ Example: [ericlindstrom/soyresponse-example](https://github.com/ericlindstrom/so
 
 ### NPM:
 
-    npm install soynode soyresponse --save
+    npm install soyresponse --save
 
 ### app.js
 

@@ -18,7 +18,7 @@
   "homepage": "https://github.com/ericlindstrom/soyresponse",
   "dependencies": {
     "extend": "^2.0.0",
-    "soynode": "^0.7.5"
+    "soynode": "^1.0.1"
   },
   "devDependencies": {
     "express": "^4.12.3",

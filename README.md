@@ -41,3 +41,5 @@ Example: [ericlindstrom/soyresponse-example](https://github.com/ericlindstrom/so
 `options.xssiPrefix` - http://goo.gl/fdgn7p
 
 `options.removeFromJson` - Remove objects from JSON that you may not need, such as a global context variable.
+
+`options.usePayload` - Moves res.locals and options into a `payload` object. Useful when using closure compilers' `ADVANCED` mode with client side templating.

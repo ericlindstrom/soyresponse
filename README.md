@@ -28,7 +28,8 @@ Example: [ericlindstrom/soyresponse-example](https://github.com/ericlindstrom/so
     var soyResponseOptions = {
       allowJson: true,
       xssiPrefix: '])}while(1);</x>',
-      removeFromJson: ['GLOBAL']
+      removeFromJson: ['GLOBAL'],
+      usePayload: true
     };
     app.use(soyresponse(__dirname, soyResponseOptions));
  

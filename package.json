@@ -1,6 +1,6 @@
 {
   "name": "soyresponse",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "render soy templates in express",
   "main": "./lib/soyresponse",
   "scripts": {

@@ -39,6 +39,8 @@ Example: [ericlindstrom/soyresponse-example](https://github.com/ericlindstrom/so
 
 `options.allowJson` - When request is XHR, allow JSON
 
+`options.buildDir` - Use precompiled templates from a directory.
+
 `options.xssiPrefix` - http://goo.gl/fdgn7p
 
 `options.removeFromJson` - Remove objects from JSON that you may not need, such as a global context variable.
